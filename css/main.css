@@ -180,6 +180,7 @@ body {
   font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
+  word-wrap：break-word;
 }
 @media (max-width: 991px) {
   body {
@@ -218,6 +219,7 @@ h6 {
 }
 p {
   margin: 0 0 20px 0;
+  word-wrap：break-word;
 }
 a,
 span.exturl {
@@ -2517,11 +2519,13 @@ ul.breadcrumb li + li:last-child {
   text-align: center;
 }
 .post-body {
-  word-break: break-all;
+  <!--word-break: break-all;-->
+  word-wrap：break-word;
   font-size: 16px;
 }
 .post-body p {
   margin: 0 0 20 0;
+  word-wrap：break-word;
 }
 .post-body ul {
   list-style-type: square;
