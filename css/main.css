@@ -1154,7 +1154,7 @@ pre .javascript .function {
   border-radius: 50%;
 }
 .site-author-name {
-  color: var(--text-color);
+  color: #fff;
   font-weight: 600;
   margin: 0;
   text-align: center;
