@@ -2517,6 +2517,7 @@ ul.breadcrumb li + li:last-child {
   text-align: center;
 }
 .post-body {
+  text-align: left;
   word-break: normal;
   font-size: 16px;
 }
