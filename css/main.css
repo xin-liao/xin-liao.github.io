@@ -1146,7 +1146,7 @@ pre .javascript .function {
   display: inline-block;
 }
 .site-author-image {
-  <!--border: 1px solid #eee;-->
+  border: 0px solid #eee;
   display: block;
   margin: 0 auto;
   max-width: 120px;
