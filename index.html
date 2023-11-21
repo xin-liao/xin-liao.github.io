@@ -286,7 +286,7 @@
  <li style="display:none"><i class="fa fa-angle-double-right fa-fw" style="color:red"></i>2021.11 Congratulations to <strong>Jiaxin Chen</strong> for winning the <strong>Zhongjiao Scholarship</strong>.
       </li>
 </ul>
-<div id="more" onclick="showMore()" style="color:blue; cursor:pointer">more</div>
+<p id="more" onclick="showMore()" style="color:blue; cursor:pointer">more</p>
 <script>
   function showMore() {
     var lis = document.getElementsByTagName("li");
@@ -294,7 +294,6 @@
       lis[i].style.display = "list-item";
     }
     document.getElementById("more").style.display = "none";
-    document.getElementById("fold").style.display = "list-item";
   }
 </script>
 
