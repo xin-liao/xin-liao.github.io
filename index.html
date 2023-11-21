@@ -242,7 +242,7 @@
     <div class="post-body" itemprop="articleBody">
   <!-👉🔥🔥-->
 <h1 id="News"><a href="#News" class="headerlink" title="News" ></a>News</h1>
-<ul style="list-style-type: none">
+<ul id="news-list" style="list-style-type: none">
  <li><i class="fa fa-angle-double-right fa-fw" style="color:red"></i>2023.10 Congratulations to <strong>Xiaoshuai Wu</strong> and <strong>Junxue Yang</strong> for winning the <strong>Excellent Graduate</strong>.
       </li>
  <li><i class="fa fa-angle-double-right fa-fw" style="color:red"></i>2023.09 <strong>Prof. Liao</strong> was invited to participate in the <a href="https://news.hubeidaily.net/hbrbsharenew/news_detail/5/1789506/0/0?tencentShare=1">Information Network Security Forum in Central China</a> and gave a report.
@@ -286,8 +286,8 @@
  <li style="display:none"><i class="fa fa-angle-double-right fa-fw" style="color:red"></i>2021.11 Congratulations to <strong>Jiaxin Chen</strong> for winning the <strong>Zhongjiao Scholarship</strong>.
       </li>
 </ul>
-<p id="more" onclick="showMore()" style="color:blue; cursor:pointer; display:inline">more</p>
-<p id="fold" onclick="fold_it()" style="color:blue; cursor:pointer; display:none">fold</p>
+<p id="more" onclick="showMore()" style="color:blue; cursor:pointer; display:inline">More</p>
+<p id="fold" onclick="showLess()" style="color:blue; cursor:pointer; display:none">Fold</p>
 <script>
   function showMore() {
     var lis = document.getElementsByTagName("li");
@@ -298,8 +298,8 @@
     document.getElementById("fold").style.display = "inline";
   }
 
-  function fold_it() {
-    var lis = document.getElementsByTagName("li");
+  function showLess() {
+    var lis = document.querySelectorAll('#news-list li');
     for (var i=6; i<lis.length; i++){
       lis[i].style.display = "none";
     }
