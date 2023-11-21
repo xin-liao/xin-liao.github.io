@@ -287,6 +287,7 @@
       </li>
 </ul>
 <p id="more" onclick="showMore()" style="color:blue; cursor:pointer; display:inline">more</p>
+<p id="fold" onclick="fold_it()" style="color:blue; cursor:pointer; display:none">fold</p>
 <script>
   function showMore() {
     var lis = document.getElementsByTagName("li");
@@ -294,6 +295,16 @@
       lis[i].style.display = "list-item";
     }
     document.getElementById("more").style.display = "none";
+    document.getElementById("fold").style.display = "inline";
+  }
+
+  function fold_it() {
+    var lis = document.getElementsByTagName("li");
+    for (var i=6; i<lis.length; i++){
+      lis[i].style.display = "none";
+    }
+    document.getElementById("more").style.display = "inline";
+    document.getElementById("fold").style.display = "none";
   }
 </script>
 
