@@ -209,7 +209,7 @@
       
          <div class="post-body">
 <h2>2024</h2>
-<ol style="list-style-type: decimal;">
+<ol id="publicationsList">
   <li><strong>X Liao</strong>, T Qiao, L Dong, Y Chen, J Chen, Z Qin. (2024). <a href="https://item.jd.com/14553562.html">Digital image forensics</a>. <a href=" https://mp.weixin.qq.com/s/IlWxXvX1ng0ea6phSDYq6g">Fudan University Press</a>. (in Chinese)
     </li>
   <li>T Wang, <strong>X Liao</strong>*, K Chow, X Lin, Y Wang, Deepfake detection: a comprehensive survey from the reliability perspective. ACM Computing Surverys (<strong>CSUR</strong>), 2024. [<strong>TOP Journal</strong>] [<strong>IF=23.8</strong>] [<a href="https://github.com/xin-liao/xin-liao.github.io/blob/main/resource/ACM CSUR-Deepfake detection a comprehensive survey from the reliability perspective.pdf">pdf</a>]
@@ -394,6 +394,18 @@
   }
 </script>
 
+<script>
+  window.onload = function() {
+    var ol = document.getElementById('publicationsList');
+    var items = Array.from(ol.children);
+    items.reverse();
+    ol.innerHTML = '';
+    items.forEach(function(item) {
+      ol.appendChild(item);
+    });
+  };
+</script>
+
         </div>
           
   
@@ -456,6 +468,8 @@
 <script src="/js/next-boot.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+
+
 
 
 
